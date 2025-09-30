@@ -1,0 +1,294 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5492895336623690771
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2777696781377981373, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 2777696781377981373, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2777696781377981373, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2777696781377981373, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2777696781377981373, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2777696781377981373, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2777696781377981373, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2777696781377981373, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2777696781377981373, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2777696781377981373, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038320868920472075, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935861845188869583, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935861845188869583, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4032302265693824646, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795724563800463261, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6724222247253387619, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_Name
+      value: EnemyPlats Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6724222247253387619, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6773814738454394919, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710784
+      objectReference: {fileID: 0}
+    - target: {fileID: 6773814738454394919, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70710576
+      objectReference: {fileID: 0}
+    - target: {fileID: 6773814738454394919, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727830805940355693, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008278346795947344, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 9082963819388559074, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 17
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5246943889678142270, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4, type: 3}
+    - {fileID: 6620970196742649027, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4, type: 3}
+    - {fileID: 7371403656599439955, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5795724563800463261, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5096530364752735526}
+    - targetCorrespondingSourceObject: {fileID: 3935861845188869583, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1130929074602545500}
+    - targetCorrespondingSourceObject: {fileID: 9008278346795947344, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2754585476871192038}
+    - targetCorrespondingSourceObject: {fileID: 9082963819388559074, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6483582494122483096}
+  m_SourcePrefab: {fileID: 100100000, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4, type: 3}
+--- !u!4 &1313858847801863220 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6773814738454394919, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+    type: 3}
+  m_PrefabInstance: {fileID: 5492895336623690771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2041296096857146254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5795724563800463261, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+    type: 3}
+  m_PrefabInstance: {fileID: 5492895336623690771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5096530364752735526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041296096857146254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f38b05cdf3eaf46999cb0f9929dc91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectDescription
+  description: "*TargetLayers - \u0432\u043E \u0447\u0442\u043E \u0441\u0442\u0440\u0435\u043B\u044F\u0442\u044C\n*ProjectileHitLayers
+    - \u0421 \u043A\u0430\u043A\u0438\u043C\u0438 \u0441\u043B\u043E\u044F\u043C\u0438
+    \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C
+    \u043F\u0443\u043B\u0435"
+--- !u!1 &3547000704424427843 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9008278346795947344, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+    type: 3}
+  m_PrefabInstance: {fileID: 5492895336623690771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2754585476871192038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3547000704424427843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8812f372949ba94f8e809921e94aea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyShooter
+  bullet: {fileID: 5893820526471111166, guid: 3f871dce4f126d04e99246c19c858a32, type: 3}
+  bulletSpeed: 20
+  maxLifeTime: 5
+  muzzle: {fileID: 6580309992463631409}
+  projectileHitLayers:
+    serializedVersion: 2
+    m_Bits: 5505
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 4096
+  detectionRadius: 25
+  shootInterval: 1
+  maxShootDistance: 50
+  maxHorizontalAngle: 45
+  useAngleRestrictions: 1
+  gunForwardTransform: {fileID: 1313858847801863220}
+  showGizmos: 0
+  gizmoColor: {r: 1, g: 0, b: 0, a: 1}
+  detectionGizmoColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+--- !u!1 &3618506291422137073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9082963819388559074, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+    type: 3}
+  m_PrefabInstance: {fileID: 5492895336623690771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6483582494122483096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3618506291422137073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8812f372949ba94f8e809921e94aea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyShooter
+  bullet: {fileID: 5893820526471111166, guid: 3f871dce4f126d04e99246c19c858a32, type: 3}
+  bulletSpeed: 20
+  maxLifeTime: 5
+  muzzle: {fileID: 6580309992463631409}
+  projectileHitLayers:
+    serializedVersion: 2
+    m_Bits: 5505
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 4224
+  detectionRadius: 25
+  shootInterval: 1
+  maxShootDistance: 50
+  maxHorizontalAngle: 45
+  useAngleRestrictions: 1
+  gunForwardTransform: {fileID: 1313858847801863220}
+  showGizmos: 0
+  gizmoColor: {r: 1, g: 0, b: 0, a: 1}
+  detectionGizmoColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+--- !u!4 &6580309992463631409 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1687541605766352930, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+    type: 3}
+  m_PrefabInstance: {fileID: 5492895336623690771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8837278846599571932 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3935861845188869583, guid: 8e9b4cf6108122c428b0e5ed1f30fdc4,
+    type: 3}
+  m_PrefabInstance: {fileID: 5492895336623690771}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1130929074602545500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8837278846599571932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8812f372949ba94f8e809921e94aea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyShooter
+  bullet: {fileID: 4848950002067711679, guid: 01f30607b01a42f4d97b7ea2593731f3, type: 3}
+  bulletSpeed: 20
+  maxLifeTime: 5
+  muzzle: {fileID: 6580309992463631409}
+  projectileHitLayers:
+    serializedVersion: 2
+    m_Bits: 5505
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 69632
+  detectionRadius: 25
+  shootInterval: 1
+  maxShootDistance: 50
+  maxHorizontalAngle: 58
+  useAngleRestrictions: 1
+  gunForwardTransform: {fileID: 1313858847801863220}
+  showGizmos: 1
+  gizmoColor: {r: 1, g: 0, b: 0, a: 1}
+  detectionGizmoColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
