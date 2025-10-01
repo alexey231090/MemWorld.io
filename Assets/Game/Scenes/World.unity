@@ -1298,10 +1298,25 @@ PrefabInstance:
         \u0432 \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u043F\u043E\u043F\u0430\u043B\u0438(MemSubject,
         Platform)"
       objectReference: {fileID: 0}
+    - target: {fileID: 6383894150519722064, guid: f5d376daafc37de4db48da9e275d7c0e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6432935479654914319, guid: f5d376daafc37de4db48da9e275d7c0e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6907656396457713972, guid: f5d376daafc37de4db48da9e275d7c0e,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7166742426274526774, guid: f5d376daafc37de4db48da9e275d7c0e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7992472264703155743, guid: f5d376daafc37de4db48da9e275d7c0e,
         type: 3}

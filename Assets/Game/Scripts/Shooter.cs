@@ -1,12 +1,11 @@
 using UnityEngine;
-using System.Collections;
 using EvolveGames;
 
 public class Shooter : MonoBehaviour
 {
 
     [Header("Virable")]
-    [SerializeField] GameObject  bullet;
+    [SerializeField] GameObject bullet;
     [SerializeField] Camera playerCamera; // камера игрока для рейкаста
 
     private PlayerController playerController;
@@ -20,11 +19,11 @@ public class Shooter : MonoBehaviour
     [SerializeField] Transform muzzle; // точка спавна пули (дуло/пушка)
     [SerializeField] LayerMask projectileHitLayers = ~0; // слои, по которым пуля будет попадать
     [SerializeField] float damageShooter = 3f;
-    
+
     [Header("Angle Restrictions")]
     [SerializeField] float maxHorizontalAngle = 45f; // максимальный угол по горизонтали (в градусах)
     [SerializeField] bool useAngleRestrictions = true; // включить/выключить ограничения углов
-    
+
     [Header("Gun Direction")]
     [SerializeField] Transform gunForwardTransform; // Transform для направления пушки (если null - используется transform.forward)
     [SerializeField] bool showGizmos = true; // показывать ли Gizmos в Scene View
@@ -86,14 +85,14 @@ public class Shooter : MonoBehaviour
 
         Vector3 spawnPos = muzzle != null ? muzzle.position : transform.position;
         Vector3 dir = (targetPoint - spawnPos).normalized;
-        
+
         // Проверяем ограничения углов
         if (useAngleRestrictions && !IsTargetWithinAngleRange(dir))
         {
             Debug.Log("[Shooter] Цель вне допустимого угла обстрела");
             return;
         }
-        
+
         GameObject b = Instantiate(bullet, spawnPos, Quaternion.LookRotation(dir, Vector3.up));
         // Передаём параметры пули в Projectile
         var proj = b.GetComponent<Projectile>();
@@ -101,63 +100,39 @@ public class Shooter : MonoBehaviour
         {
             proj.SetHitLayers(projectileHitLayers);
             proj.SetDamage(damageShooter);
-        }
-        StartCoroutine(BulletRoutine(b, targetPoint));
-    }
-
-
-    IEnumerator BulletRoutine(GameObject b, Vector3 targetPoint)
-    {
-        if (b == null) yield break;
-
-        // Полёт к точке назначения
-        float life = 0f;
-        Vector3 startPos = b.transform.position;
-        Vector3 direction = (targetPoint - startPos).normalized;
-        
-        while (life < maxLifeTime && b != null)
-        {
-            if (b != null)
-            {
-                b.transform.position += direction * bulletSpeed * Time.deltaTime;
-            }
-            life += Time.deltaTime;
-            yield return null;
-        }
-
-        if (b != null)
-        {
-            Destroy(b);
+            proj.SetFlightParameters(bulletSpeed, maxLifeTime, targetPoint);
         }
     }
-    
+
+
+
     // Проверяет, находится ли цель в допустимом диапазоне углов
     private bool IsTargetWithinAngleRange(Vector3 targetDirection)
     {
         // Получаем направление "вперёд" пушки
         Vector3 gunForward = GetGunForward();
-        
+
         // Вычисляем угол между направлением пушки и направлением к цели
         float angle = Vector3.Angle(gunForward, targetDirection);
-        
+
         // Получаем локальные оси пушки
         Vector3 gunRight = transform.right;
         Vector3 gunUp = transform.up;
-        
+
         // Проектируем направления на локальные оси пушки
         Vector3 horizontalGunForward = Vector3.ProjectOnPlane(gunForward, gunUp).normalized;
         Vector3 horizontalTargetDir = Vector3.ProjectOnPlane(targetDirection, gunUp).normalized;
         float horizontalAngle = Vector3.Angle(horizontalGunForward, horizontalTargetDir);
-        
-    
-        
+
+
+
         // Проверяем, что углы не превышают ограничения
         bool horizontalOK = horizontalAngle <= maxHorizontalAngle;
-        
-        
+
+
         return horizontalOK;
     }
-    
+
     // Получает направление "вперёд" пушки
     private Vector3 GetGunForward()
     {
@@ -167,48 +142,48 @@ public class Shooter : MonoBehaviour
         }
         return transform.forward;
     }
-    
+
     // Рисует Gizmos для визуализации направления пушки и ограничений углов
     private void OnDrawGizmos()
     {
         if (!showGizmos) return;
-        
+
         Vector3 gunForward = GetGunForward();
         Vector3 gunPosition = transform.position;
-        
+
         Gizmos.color = gizmoColor;
-        
+
         // Рисуем основное направление пушки
         Gizmos.DrawRay(gunPosition, gunForward * 3f);
-        
+
         // Рисуем конус ограничений углов
         if (useAngleRestrictions)
         {
             DrawAngleCone(gunPosition, gunForward);
         }
     }
-    
+
     // Рисует конус ограничений углов
     private void DrawAngleCone(Vector3 position, Vector3 forward)
     {
         Gizmos.color = new Color(gizmoColor.r, gizmoColor.g, gizmoColor.b, 0.3f);
-        
+
         // Создаем точки для конуса
         int segments = 16;
         float radius = 2f;
-        
+
         // Горизонтальный конус
         for (int i = 0; i < segments; i++)
         {
             float angle1 = (i * 360f / segments) * Mathf.Deg2Rad;
             float angle2 = ((i + 1) * 360f / segments) * Mathf.Deg2Rad;
-            
+
             Vector3 dir1 = Quaternion.AngleAxis(maxHorizontalAngle, Vector3.up) * forward;
             Vector3 dir2 = Quaternion.AngleAxis(-maxHorizontalAngle, Vector3.up) * forward;
-            
+
             Vector3 point1 = position + dir1 * radius;
             Vector3 point2 = position + dir2 * radius;
-            
+
             Gizmos.DrawLine(position, point1);
             Gizmos.DrawLine(position, point2);
         }
